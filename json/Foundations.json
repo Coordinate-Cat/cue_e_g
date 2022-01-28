@@ -22,9 +22,39 @@
             3
         ]
     },
+    "hello": "world",
+    "s": {
+        "a": 1,
+        "c": {
+            "d": 3
+        },
+        "hello": "world",
+        "b": 2
+    },
+    "l": [
+        "abc",
+        "123"
+    ],
     "album": {
-        "title": "Houses of the Holy",
-        "year": 1973,
-        "live": false
+        "artist": "Led Zeppelin",
+        "title": "Led Zeppelin I",
+        "year": 1969
+    },
+    "n": 23,
+    "port": 5432,
+    "val": {
+        "foo": "bar",
+        "ans": 42
+    },
+    "value": {
+        "name": "app",
+        "kind": "deploy",
+        "version": "v1.0.42",
+        "labels": [
+            "server",
+            "prod"
+        ],
+        "role": "backend",
+        "public": false
     }
 }
