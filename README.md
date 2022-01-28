@@ -62,9 +62,20 @@ https://cuetorials.com/overview
   cue/order/order-unification.cue
   ```
 
+- ショートハンド
+  ```
+  a: {
+    foo: "bar"
+  }
+
+  // shorthand nested field
+  a: hello: "world"
+  ```
+
 ## COMMAND
+このレポジトリでよく使ったコマンド
 ```
-# echo(結果を表示)
+# 結果を表示
 ## json
 cue export cue/Foundations.cue --out json
 ## yaml
@@ -78,6 +89,37 @@ cue export cue/order/order-1.cue cue/order/order-2.cue --out json > cue/order/or
 
 # eval(cueファイルを評価する)
 cue eval cue/Foundations.cue
+```
+
+## BUILTIN TYPES
+ビルトインで用意されている型
+```
+N:   null
+B:   bool
+S:   string
+By:  bytes
+Num: number // Decimals or integers, a superclass if you will
+Int: int    // Big Int which can represent values without limits
+List: [...]
+Struct: {...}
+```
+
+## SUGAR SYNTACTIC
+糖衣構文
+```
+hex:  0xdeadbeef            → hex:  3735928559
+oct:  0o755                 → oct:  493
+bin:  0b0101_0001           → bin:  81
+cpu:  0.5Mi                 → cpu:  524288
+mem:  4Gi                   → mem:  4294967296
+mill: 1M                    → mill: 1000000
+bill: 1G                    → bill: 1000000000
+zero: 0.0                   → zero: 0
+half: 0.5                   → half: 0.5
+trim: 01.23                 → trim: 1.23
+mole: 6.022_140_76e+23      → mole: 6.02214076e+23
+tiny: 1.2345e-12            → tiny: 1.2345e-12
+long: 23_456_789_000_000000 → long: 23456789000000000
 ```
 
 ## REFERNCE
@@ -104,6 +146,9 @@ https://pkg.go.dev/cuelang.org/go/cue
 https://future-architect.github.io/articles/20191002/
 - ngkcl/vscode-cuelang(highlight ext)  
 https://github.com/ngkcl/vscode-cuelang
+- シェルスクリプトでJSONを扱う  
+https://qiita.com/unhurried/items/c62d29540de3e10a50ad
+
 
 ### REGEX
 - 基本的な正規表現一覧

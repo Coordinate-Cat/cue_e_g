@@ -1,0 +1,50 @@
+{
+    "hex": 3735928559,
+    "oct": 493,
+    "bin": 81,
+    "cpu": 524288,
+    "mem": 4294967296,
+    "mill": 1000000,
+    "bill": 1000000000,
+    "zero": 0.0,
+    "half": 0.5,
+    "trim": 1.23,
+    "mole": 6.02214076E+23,
+    "tiny": 1.2345E-12,
+    "long": 23456789000000000,
+    "str": "hello world",
+    "smile": "😊",
+    "quoted": "you can \"quote by escaping \\ \"",
+    "multiline": "hello world\na \"quoted string in a string\"\ndown under\n   - some author",
+    "str1": "avoid using \\ to \"escape\"",
+    "str2": "#\"\"\"\na nested multiline\nstring goes here\n\"\"\"#",
+    "a": {
+        "foo": "bar",
+        "hello": "world"
+    },
+    "b": {
+        "left": "right",
+        "right": "left"
+    },
+    "val": {
+        "num": 42,
+        "ans": "life"
+    },
+    "elems": {
+        "one": {
+            "name": "one",
+            "ans": "solo",
+            "num": 1
+        },
+        "other": {
+            "name": "other",
+            "ans": "id",
+            "num": 23
+        },
+        "two": {
+            "name": "two",
+            "ans": "life",
+            "num": 42
+        }
+    }
+}
