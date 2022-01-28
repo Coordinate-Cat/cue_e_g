@@ -72,6 +72,22 @@ https://cuetorials.com/overview
   a: hello: "world"
   ```
 
+- 接頭辞アンダーバー(_)で非表示
+  ```
+  A: {                               →
+    _hidden: "a hidden field"        →
+    isshown: "I can be seen"         →
+    hidrefd: _hidden + " sort of?"   →
+  }                                  →
+
+  _#NoshowDefn: {                    →
+    hello: string                    →
+    num:   int | *42                 →
+  }                                  →
+
+  B: _#NoshowDefn & {hello: "world"} →
+  ```
+
 ## COMMAND
 このレポジトリでよく使ったコマンド
 ```
